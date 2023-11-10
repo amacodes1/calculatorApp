@@ -15,7 +15,7 @@
 }
 
 .calculator {
-  background: rgb(150, 144, 144);
+  background: rgb(15, 15, 15);
   padding: 20px;
   border-radius: 10px;
 }
@@ -28,7 +28,7 @@
   border-radius: 10px;
   box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
     5px 5px 15px rgba(0, 0, 0, 0.2);
-  background: transparent;
+  background: rgb(70, 69, 69);
   font-size: 20px;
   color: white;
   cursor: pointer;
@@ -46,12 +46,13 @@ form .display input {
   flex: 1;
   box-shadow: none;
   font-size: 45px;
+  background-color: rgb(15, 15, 15);
 }
 
-form input.equal {
+form input.double {
   width: 145px;
 }
 
-.operator {
-  color: orange;
+form input.operator {
+  background-color: orange;
 }
