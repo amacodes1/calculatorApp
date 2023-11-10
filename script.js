@@ -12,6 +12,14 @@ function appendToDisplay(value) {
   display.value += value;
 }
 
+function calculatePercentage() {
+  try {
+    display.value = eval(display.value) / 100;
+  } catch (error) {
+    display.value = "Error";
+  }
+}
+
 function calculateResult() {
   try {
     display.value = eval(display.value);
