@@ -18,26 +18,29 @@
   background: rgb(15, 15, 15);
   padding: 20px;
   border-radius: 10px;
+  width: 80%;
+  max-width: 260px;
+  margin: 50px;
 }
 
 .calculator form input {
   border: 0;
   outline: 0;
-  width: 60px;
-  height: 60px;
-  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
   box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
     5px 5px 15px rgba(0, 0, 0, 0.2);
   background: rgb(70, 69, 69);
-  font-size: 20px;
+  font-size: 14px;
   color: white;
   cursor: pointer;
-  margin: 10px;
+  margin: 5px;
 }
 
 form .display {
   display: flex;
-  justify-content: flex-end;
+  align-items: flex-end;
   margin: 20px 0;
 }
 
@@ -45,14 +48,29 @@ form .display input {
   text-align: right;
   flex: 1;
   box-shadow: none;
-  font-size: 45px;
+  font-size: 30px;
   background-color: rgb(15, 15, 15);
 }
 
 form input.double {
-  width: 145px;
+  width: 96px;
+  margin-bottom: 10px;
 }
 
 form input.operator {
   background-color: orange;
+}
+
+@media only screen and (max-width: 600px) {
+  .calculator {
+    width: 90%;
+  }
+
+  form .display {
+    flex-direction: row;
+  }
+
+  form .display input {
+    font-size: 20px;
+  }
 }
